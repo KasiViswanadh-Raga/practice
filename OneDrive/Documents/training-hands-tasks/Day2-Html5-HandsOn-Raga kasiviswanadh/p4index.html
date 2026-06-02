@@ -1,0 +1,92 @@
+<!--Problem 4: Multi-Page Website with Breadcrumb Navigation (Level-2)
+Scenario
+A training portal website has multiple levels of pages and users often get confused about where they are. The company wants breadcrumbs for better navigation.
+📌 Requirements
+Pages:
+•	Home
+•	Courses
+•	Web Development
+•	HTML Course
+Implement:
+•	<nav> for main menu
+•	Breadcrumb navigation using anchor tags
+Example:
+Home > Courses > Web Development > HTML
+Use:
+•	Hierarchical linking
+•	Relative paths
+Breadcrumb should update based on page hierarchy
+
+🛠️ Technical Constraints
+•	HTML5 only
+•	No CSS frameworks
+•	Semantic elements preferred
+
+🎯 Learning Outcome
+Learners should be able to:
+•	Breadcrumbs must reflect correct page structure
+•	Navigation must work without broken links
+•	Clear hierarchy in folder structure
+•	Design hierarchical navigation
+•	Implement breadcrumbs
+•	Understand real-world website structure
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Training Portal</title>
+</head>
+<body>
+
+    <nav>
+        <a href="p4index.html">Home</a> |
+        <a href="p4courses.html">Courses</a>
+    </nav>
+
+    <h1>Welcome to Training Portal</h1>
+    <p>This is the Home page.</p>
+
+</body>
+</html>
+<!--EXPLAINATION:
+Problem 4 is designed to validate the understanding of hierarchical website structure and breadcrumb navigation in HTML5. Unlike previous problems, this task introduces multi-level page organization and structured linking.
+
+The project follows the standard HTML5 boilerplate structure, including <!DOCTYPE html>, <html>, <head>, and <body> tags. The <!DOCTYPE html> declaration ensures that the document is interpreted as HTML5 by the browser.
+
+A proper folder hierarchy is created to simulate a real-world website structure. The Home page is placed in the root folder, while the Courses section is stored inside a courses folder. Inside that folder, a web-development subfolder contains deeper-level pages such as html-course.html. This structure reflects how large websites organize content logically.
+
+The main navigation menu is implemented using the semantic <nav> element. Inside the <nav> tag, <a> anchor tags are used to connect pages using relative paths. Relative paths such as ../ and ../../ are used to move between parent and root directories. This demonstrates understanding of directory hierarchy and structured linking.
+
+Breadcrumb navigation is implemented using anchor tags separated by the > symbol. For example:
+
+Home > Courses > Web Development > HTML Course
+
+Each level in the breadcrumb represents the page hierarchy. The breadcrumb updates depending on the current page location. For example:
+
+On the Courses page:
+Home > Courses
+
+On the Web Development page:
+Home > Courses > Web Development
+
+On the HTML Course page:
+Home > Courses > Web Development > HTML Course
+
+This allows users to clearly understand their current location within the website and easily navigate back to previous sections.
+
+This problem helps learners understand:
+
+Real-world website folder hierarchy
+
+Use of relative paths (../, ../../)
+
+Multi-level navigation structure
+
+Implementation of breadcrumb navigation
+
+Use of semantic <nav> elements
+
+Structured linking without CSS or JavaScript
+
+Overall, this task demonstrates how professional websites organize pages hierarchically and provide clear navigation paths to enhance user experience and usability using only HTML5.
+-->

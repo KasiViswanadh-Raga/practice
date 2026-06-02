@@ -1,0 +1,87 @@
+<!--Problem 2: Simple Website Navigation System (Level-1)
+Scenario
+A small coaching institute wants a basic static website with multiple pages so students can easily navigate between sections like Home, Courses, and Contact.
+📌 Requirements
+•	Create 3 HTML pages:
+o	index.html (Home)
+o	courses.html
+o	contact.html
+•	Use:
+o	<nav> element to create a navigation menu
+o	<a> anchor tags for navigation
+•	Navigation menu should appear on all pages
+•	Use relative paths to link pages
+•	Include at least:
+o	One internal anchor link (#section)
+o	One external link (e.g., institute’s social media)
+
+🛠️ Technical Constraints
+•	Only HTML5
+•	No CSS or JavaScript
+•	Navigation must be semantic (<nav>)
+🎯 Learning Outcome
+You should be able to:
+•	Use <nav> and <a> elements
+•	Understand relative paths
+•	Build a simple multi-page navigation structure
+•	Users should move seamlessly between pages
+•	Code should be readable and well-indented
+•	Navigation links should work correctly
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Coaching Institute</title>
+</head>
+<body>
+
+<nav>
+    <a href="p2index.html">Home</a> |
+    <a href="courses.html">Courses</a> |
+    <a href="p2contact.html">Contact</a>
+</nav>
+
+<h1>Welcome to Our Coaching Institute</h1>
+
+<p>This is the home page of our institute website.</p>
+
+<p>
+    <a href="#about">Go to About Section</a>
+</p>
+
+<h2 id="about">About Us</h2>
+<p>We provide quality education and training for students.</p>
+
+<p>
+    Follow us on 
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+</p>
+
+</body>
+</html>
+<!--EXPLAINATION:
+Problem 2 is designed to validate the understanding of multi-page navigation and the use of semantic HTML5 elements. In this task, three separate HTML pages are created — index.html, courses.html, and contact.html — to simulate a basic static website for a coaching institute.
+
+Each page follows the standard HTML5 boilerplate structure, which includes <!DOCTYPE html>, <html>, <head>, and <body> tags. The <!DOCTYPE html> declaration defines the document as HTML5, ensuring modern browser compatibility.
+
+A navigation menu is created using the semantic <nav> element. Inside the <nav> tag, <a> (anchor) tags are used to link the pages together using relative paths such as href="courses.html". Since all files are located in the same folder, simple file names are used for linking. The navigation bar is included on all three pages to maintain consistency and allow seamless movement between sections.
+
+An internal anchor link is implemented on the Home page using href="#about". The <h2> element has an id="about" attribute, allowing users to jump directly to that section within the same page. This demonstrates the use of fragment identifiers for internal navigation.
+
+An external link is also added using <a href="https://www.facebook.com" target="_blank">. The target="_blank" attribute ensures that the external website opens in a new browser tab.
+
+This problem helps in understanding how to:
+
+Create multi-page websites
+
+Use semantic <nav> elements
+
+Implement internal and external links
+
+Apply relative paths correctly
+
+Maintain consistent navigation across pages
+
+Overall, this task demonstrates how static websites are structured and how users can navigate efficiently between different sections using only HTML5 without CSS or JavaScript.
+-->

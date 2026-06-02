@@ -1,0 +1,104 @@
+<!--Problem 3: Student Registration Form with Input Types (Level-1)
+Scenario
+An institute wants a basic student registration form with built-in validation to reduce incorrect submissions.
+📌 Requirements
+Create an HTML webpage that includes:
+ Create a form with following input types:
+•	text (Name)
+•	email
+•	tel
+•	number (Age)
+•	date
+Use HTML5 built-in validation:
+•	required
+•	min, max
+•	pattern (for phone number)
+Add submit button
+
+🛠️ Technical Constraints
+•	HTML5 only
+•	No JavaScript validation
+•	Use proper <label> tags
+
+🎯 Learning Outcome
+You will be able to:
+•	Use advanced input types
+•	Apply built-in HTML5 validation
+•	Improve form usability without JavaScript
+•	Browser should show validation errors automatically
+•	Inputs should restrict invalid values
+•	Form should be user-friendly
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <h1>Student Registration</h1>
+
+    <form>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" 
+               placeholder="Enter your full name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" 
+               placeholder="Enter your email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter 10-digit phone number"
+               pattern="[0-9]{10}" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"
+               min="18" max="60" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
+<!--EXPLAINATION:
+Problem 3 is designed to validate the understanding of advanced HTML5 input types and built-in form validation features. In this task, a student registration form is created using only HTML5 without any CSS or JavaScript.
+
+The webpage follows the standard HTML5 boilerplate structure, which includes <!DOCTYPE html>, <html>, <head>, and <body> tags. The <!DOCTYPE html> declaration specifies that the document is written in HTML5, ensuring compatibility with modern browsers.
+
+Inside the <body> section, a <form> element is created to collect user input. Each input field is associated with a <label> tag using the for attribute. The for attribute matches the id of the corresponding input field, which improves accessibility and usability.
+
+Different HTML5 input types are used to ensure proper data collection:
+
+<input type="text"> is used to collect the student’s full name.
+
+<input type="email"> automatically validates the email format. The browser checks whether the entered value contains a valid email structure (e.g., name@example.com
+).
+
+<input type="tel"> is used for phone numbers. A pattern attribute is added with [0-9]{10}, which ensures that only a 10-digit numeric phone number is accepted.
+
+<input type="number"> is used for age. The min="18" and max="60" attributes restrict the allowed age range between 18 and 60.
+
+<input type="date"> allows users to select their date of birth using a built-in date picker provided by the browser.
+
+The required attribute is applied to all fields to prevent form submission if any mandatory field is left empty. This ensures that incomplete forms cannot be submitted.
+
+A submit button is added using <button type="submit">. When the user clicks this button, the browser automatically performs validation checks based on the defined attributes such as required, pattern, min, and max.
+
+This problem helps learners understand how to:
+
+Use advanced HTML5 input types
+
+Apply built-in validation without JavaScript
+
+Improve form usability and accessibility
+
+Restrict invalid data entry at the browser level
+
+Overall, this task demonstrates how HTML5 provides powerful form validation features that enhance user experience and reduce incorrect data submission without requiring additional scripting.
+-->

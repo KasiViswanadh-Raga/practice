@@ -1,0 +1,80 @@
+<!--Assessment Goal: Validate understanding of links and form elements.
+Hands-on Tasks:
+1.	Create two HTML pages and link them using navigation links
+2.	Add a navigation bar with Home and Contact links
+3.	Create a registration form with:
+o	Name
+o	Email
+o	Password
+o	Gender (radio buttons)
+o	Course selection (dropdown)
+4.	Use required and placeholder attributes
+Expected Outcome:
+A multi-page website with working navigation and a basic form.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+
+<nav>
+    <a href="p1index.html">Home</a> |
+    <a href="contact.html">Contact</a>
+</nav>
+
+<h1>Welcome to Our Institute</h1>
+
+<h2>Registration Form</h2>
+
+<form>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your name" required>
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email" required>
+    <br><br>
+
+    <label>Password:</label>
+    <input type="password" placeholder="Enter password" required>
+    <br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" required> Male
+    <input type="radio" name="gender"> Female
+    <br><br>
+
+    <label>Course:</label>
+    <select required>
+        <option value="">Select Course</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Register</button>
+</form>
+
+</body>
+</html>
+<!--Explaination:
+ Problem 1 is designed to validate the understanding of links, navigation structure, and form elements in HTML5. In this task, two separate HTML pages are created and connected using navigation links to form a simple multi-page website. The standard HTML boilerplate structure is used in both pages, which includes <!DOCTYPE html>, <html>, <head>, and <body> tags. The <!DOCTYPE html> declaration defines the document as HTML5, and the <html> tag acts as the root element of the webpage.
+
+Inside the <head> section, the <title> tag is used to define the page title, which appears on the browser tab. The <body> section contains all the visible content displayed in the browser.
+
+A navigation bar is created using the semantic <nav> element. Inside the <nav> tag, <a> (anchor) tags are used to create links between index.html and contact.html. These links use relative paths, meaning the files are linked based on their location in the same folder. This allows users to move easily between pages.
+
+On the Home page, a registration form is created using the <form> element. Various input fields are added using different HTML input types. The <input type="text"> is used for entering the name, <input type="email"> ensures that the email format is valid, and <input type="password"> hides the entered characters for security purposes.
+
+Gender selection is implemented using <input type="radio"> buttons. Both radio buttons share the same name attribute, which ensures that only one option can be selected at a time. A dropdown menu is created using the <select> tag, and individual options are added using <option> tags for course selection.
+
+The required attribute is used in form fields to prevent submission without filling mandatory information. The placeholder attribute provides hint text inside input fields to guide users. A submit button is added using <button type="submit"> to allow form submission.
+
+The Contact page contains basic contact information and uses the same navigation bar to maintain consistency across pages.
+
+Overall, this problem helps in understanding multi-page navigation, the use of semantic elements like <nav>, linking using <a> tags, and creating structured forms with built-in HTML5 validation. It demonstrates how static websites can be structured for better usability and navigation without using CSS or JavaScript.
+-->
